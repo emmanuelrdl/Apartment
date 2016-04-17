@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :restaurants
   constraints subdomain: /(?!www)(\w+)/ do
     resources :projets
   end
